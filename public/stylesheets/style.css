@@ -92,6 +92,15 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
+.user a {
+  font-size: 18px;
+  margin: 0 16px;
+  border: 1px solid crimson;
+  padding: 8px 16px;
+  color: crimson;
+  border-radius: 20px;
+  cursor: pointer;
+}
 .util i:active {
   color: white;
   background: crimson;
