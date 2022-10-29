@@ -1,15 +1,3 @@
-// import fs from "fs";
-
-// let foodItem;
-// fs.readFile("../resourses/fooditem.json", "utf-8", (err, data) => {
-//   if (err) {
-//     console.error(err);
-//     return;
-//   }
-//   console.log(data);
-//   foodItem = data;
-// });
-
 import items from "../resourses/fooditem.json" assert { type: "json" };
 var foodItem = items;
 
@@ -30,6 +18,12 @@ function displayItems() {
 
     var cardTop = document.createElement("div");
     cardTop.setAttribute("id", "card-top");
+
+    var heart = document.createElement("i");
+    heart.setAttribute("class", "fa fa-heart-o add-to-cart");
+    heart.setAttribute("id", item.id);
+
+    cardTop.appendChild(heart);
 
     var img = document.createElement("img");
     img.src = item.img;
@@ -57,6 +51,12 @@ function displayItems() {
     var cardTop = document.createElement("div");
     cardTop.setAttribute("id", "card-top");
 
+    var heart = document.createElement("i");
+    heart.setAttribute("class", "fa fa-heart-o add-to-cart");
+    heart.setAttribute("id", item.id);
+
+    cardTop.appendChild(heart);
+
     var img = document.createElement("img");
     img.src = item.img;
 
@@ -83,6 +83,12 @@ function displayItems() {
     var cardTop = document.createElement("div");
     cardTop.setAttribute("id", "card-top");
 
+    var heart = document.createElement("i");
+    heart.setAttribute("class", "fa fa-heart-o add-to-cart");
+    heart.setAttribute("id", item.id);
+
+    cardTop.appendChild(heart);
+
     var img = document.createElement("img");
     img.src = item.img;
 
@@ -108,6 +114,12 @@ function displayItems() {
 
     var cardTop = document.createElement("div");
     cardTop.setAttribute("id", "card-top");
+
+    var heart = document.createElement("i");
+    heart.setAttribute("class", "fa fa-heart-o add-to-cart");
+    heart.setAttribute("id", item.id);
+
+    cardTop.appendChild(heart);
 
     var img = document.createElement("img");
     img.src = item.img;
@@ -154,7 +166,6 @@ function selectTaste() {
     listCard.appendChild(listImg);
     listCard.appendChild(listName);
 
-    var cloneListCard = listCard.cloneNode(true);
     categoryList.appendChild(listCard);
   });
 }
@@ -171,6 +182,7 @@ function addToCart() {
 
   var index = cartData.indexOf(itemObj);
   if (index === -1) {
+    document.getElementById(itemObj.id).classList.add("toggle-heart");
     cartData = [...cartData, itemObj];
   } else if (index > -1) {
     alert("Added to cart!");
@@ -264,9 +276,9 @@ function decrementItem() {
       document.getElementById("food-items").classList.toggle("food-items");
       document.getElementById("category-list").classList.toggle("food-items");
       document.getElementById("cart-page").classList.toggle("cart-toggle");
-      document
-        .getElementById("category-header")
-        .classList.toggle("toggle-category");
+      //   document
+      //     .getElementById("category-header")
+      //     .classList.toggle("toggle-category");
       document.getElementById("checkout").classList.toggle("cart-toggle");
       flag = false;
       alert("Currently no item in cart!");
@@ -294,9 +306,9 @@ function cartToggle() {
   if (cartData.length > 0) {
     document.getElementById("food-items").classList.toggle("food-items");
     document.getElementById("category-list").classList.toggle("food-items");
-    document
-      .getElementById("category-header")
-      .classList.toggle("toggle-category");
+    // document
+    //   .getElementById("category-header")
+    //   .classList.toggle("toggle-category");
     document.getElementById("cart-page").classList.toggle("cart-toggle");
     document.getElementById("checkout").classList.toggle("cart-toggle");
     flag = true;
@@ -310,20 +322,20 @@ window.onresize = window.onload = function () {
   var size = window.screen.width;
   console.log(size);
   if (size < 800) {
-    let cloneFoodItems = document.getElementById("food-items").cloneNode(true);
-    let cloneCartPage = document.getElementById("cart-page").cloneNode(true);
+    var cloneFoodItems = document.getElementById("food-items").cloneNode(true);
+    var cloneCartPage = document.getElementById("cart-page").cloneNode(true);
     document.getElementById("food-items").remove();
     document.getElementById("cart-page").remove();
-    document.getElementById("category-header").after(cloneFoodItems);
+    // document.getElementById("category-header").after(cloneFoodItems);
     document.getElementById("food-items").after(cloneCartPage);
     addEvents();
   }
   if (size > 800) {
-    let cloneFoodItems = document.getElementById("food-items").cloneNode(true);
+    var cloneFoodItems = document.getElementById("food-items").cloneNode(true);
     document.getElementById("food-items").remove();
     document.getElementById("header").after(cloneFoodItems);
 
-    let cloneCartPage = document.getElementById("cart-page").cloneNode(true);
+    var cloneCartPage = document.getElementById("cart-page").cloneNode(true);
     document.getElementById("cart-page").remove();
     document.getElementById("food-items").after(cloneCartPage);
     addEvents();
@@ -341,13 +353,4 @@ function addEvents() {
   document.querySelectorAll(".decrease-item").forEach((item) => {
     item.addEventListener("click", decrementItem);
   });
-}
-
-function addAddress() {
-  var address = prompt("Enter your address", "");
-  if (address) {
-    document.getElementById("add-address").innerText = " " + address;
-  } else {
-    alert("Address not added");
-  }
 }

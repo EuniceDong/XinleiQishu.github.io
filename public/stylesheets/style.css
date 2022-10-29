@@ -134,7 +134,16 @@ body {
   margin: 5px 0;
   justify-content: space-between;
 }
-
+.fa-heart-o {
+  padding: 6px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+.toggle-heart {
+  background: orangered;
+  color: white;
+}
 #item-card img {
   width: 120px;
   height: 120px;
@@ -234,10 +243,6 @@ body {
 #total-item {
   font-size: 25px;
   color: indianred;
-}
-#delievery {
-  font-size: 20px;
-  color: limegreen;
 }
 #cart {
   background: whitesmoke;
