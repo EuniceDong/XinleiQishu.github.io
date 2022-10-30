@@ -70,7 +70,7 @@ npm install prettier
 1. Sign Up and Log In page
 2. View Shopping Cart 
 3. Check Out with Credit Card
-<img width="1089" alt="screenshot_about" src="https://user-images.githubusercontent.com/105116091/193444773-810653bc-19ad-4661-a39e-18de3f5338a4.png">
+<!-- <img width="1089" alt="screenshot_about" src="https://user-images.githubusercontent.com/105116091/193444773-810653bc-19ad-4661-a39e-18de3f5338a4.png">
 <img width="1089" alt="screenshot_about" src="https://user-images.githubusercontent.com/105116091/193444774-810c66b3-ddc9-4ac5-923b-a5f100596a47.png">
 <img width="1089" alt="screenshot_about" src="https://user-images.githubusercontent.com/105116091/193444776-b43c4f60-470f-4038-992c-37603351ee4a.png">
-<img width="1177" alt="screenshot_interests" src="https://user-images.githubusercontent.com/105116091/193444992-7a5f1854-78b3-419e-83d5-730266ede9d3.png">
+<img width="1177" alt="screenshot_interests" src="https://user-images.githubusercontent.com/105116091/193444992-7a5f1854-78b3-419e-83d5-730266ede9d3.png"> -->
