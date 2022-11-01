@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UserCenter</title>
+    <link rel="stylesheet" href="../stylesheets/userCenter.css" />
+  </head>
+  <body>
+    <div class="header">User Center</div>
+    <div class="user-center">
+      <div class="user">
+        current Name : <span class="user-name"> test user </span>
+      </div>
+      <div class="modify-password">modify password</div>
+    </div>
+
+    <div class="Order-history">
+      <h1>Order history</h1>
+
+      <!-- popup window -->
+      <div class="dialog">
+        <div class="close">×</div>
+        <form action="/resetPass" method="post">
+          <label class="form-label">
+            <input
+              type="password"
+              name="password"
+              placeholder="Modify the password"
+            />
+          </label>
+          <button class="btn dialog-btn" type="submit">Confirm</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="../javascripts/userCenter.js"></script>
+</html>

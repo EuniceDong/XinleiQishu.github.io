@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="
+        width=device-wit=dth, initial-scale=1.0"
+    />
+    <title>H&D Online Order</title>
+    <script>
+      addEventListener(
+        "load",
+        function () {
+          setTimeout(hideURLbar, 0);
+        },
+        false
+      );
+
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+    <!--css file link-->
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!--font awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <!--bootstrap link-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+
+  <header>
+    <div id="top">
+      <div class="title">
+        <span>
+          <h1>
+            <img src="../images/LOGO.png" alt="logo" />
+            H&D Yum Yum&nbsp
+          </h1>
+        </span>
+        <p>
+          <span>
+            <i class="bi bi-telephone"> &nbsp(669)291-4845</i>
+          </span>
+          <span> &nbsp|&nbsp </span>
+          <span>
+            <i class="bi bi-pin-map">
+              600 California St, San Francisco, CA 94108</i
+            >
+          </span>
+        </p>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div>
+      <div class="SignUp">
+        <div class="container-fluid d-flex justify-content-center">
+          <div class="signcard">
+            <div class="card-header">
+              <h1>Sign Up</h1>
+            </div>
+            <div class="card-body">
+              <div class="containAlert"></div>
+              <!--action="/test/signup" method="POST"-->
+              <form action="/signup" method="POST">
+                <div class="m-2">
+                  <label for="userName">Username</label>
+                  <input
+                    type="text"
+                    id="userName"
+                    name="user"
+                    class="form-control"
+                    placeholder="xxx@gmail.com"
+                  />
+                </div>
+
+                <div class="m-2">
+                  <label for="passWord">Password</label>
+                  <input
+                    type="password"
+                    id="passWord"
+                    name="password"
+                    class="form-control"
+                    placeholder="mypassword"
+                  />
+                </div>
+                <div class="m-2" type="submit">
+                  <label for="passWord2">Please Verify Your Password</label>
+                  <input
+                    type="password"
+                    id="passWord2"
+                    name="passWord2"
+                    class="form-control"
+                    placeholder="mypassword"
+                  />
+                </div>
+                <div class="m-2">
+                  <button type="submit" class="btn btn-primary" id="submit">
+                    Sign Up
+                  </button>
+                </div>
+                <div class="form-group">
+                  Already an user? <a href="./account.html">Sign In</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../javascripts/client.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <p class="cpy-right">
+        © 2022 Xinlei Hu and Qishu Dong. All rights reserved.
+      </p>
+    </footer>
+    <!-- <script type="module" src="../javascripts/index.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,57 @@
+.inlineimage {
+    display: flex;
+    justify-content: space-around;
+    max-width: 470px;
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+.images {
+    padding-right: 3px;
+    padding-top: 3px;
+    display: inline-block;
+    max-width: 98%;
+    height: auto;
+    width: 10%;
+    margin: 1%;
+    left: 20px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.dialog {
+    width: 750px;
+    height: 470px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #F5F5F5;
+    display: none;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.dialog span {
+    margin: 50px auto;
+    font-size: 40px;
+}
+
+.dialog div {
+    width: 100px;
+    border: 1px solid #CA3743;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin: 30px auto;
+    color: #CA3743;
+    text-align: center;
+    cursor: pointer;
+}
