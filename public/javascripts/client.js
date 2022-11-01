@@ -59,6 +59,10 @@ function MyClientModule() {
 
   checkIfLoggedIn();
   userSignUp();
+
+  btn_shoppingCartAdd.onclick = async () => {
+    await fetch("/shoppingCartAdd");
+  };
 }
 
 MyClientModule();

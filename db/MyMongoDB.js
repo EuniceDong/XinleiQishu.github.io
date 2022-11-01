@@ -7,6 +7,7 @@ function MyMongoDB() {
   const DB_NAME = "H&D_user";
   const COLLECTION_NAME = "user";
   const COLLECTION_NAME_CART = "shopping-cart";
+  const COLLECTION_NAME_FOOD = "food-items";
   async function getCollection(colName) {
     const client = new MongoClient(url);
 
@@ -66,30 +67,15 @@ function MyMongoDB() {
     }
   };
 
-  // myDB.shoppingCartAdd = async (update) => {
-  //   let client, col;
-  //   try {
-  //     [client, col] = await getCollection(COLLECTION_NAME);
-
-  //     console.log("reset res: ", res);
-  //   } finally {
-  //     await client.close();
-  //   }
-  // };
-  // const client = new MongoClient(url);
-
-  // const db = client.db(DB_NAME);
-  // const usersCol = db.collection(COLLECTION_NAME);
-  // console.log("searching for", user);
-  // const res = await usersCol.findOne({ user: user.user });
-  // if (res) {
-  //   console.log("res", res, res.password === user.password);
-  //   if (res.password === user.password) return true;
-  //   else return false;
-  // } else {
-  //   db.insert("user", user.password);
-  //   return true;
-  // }
+  myDB.shoppingCartAdd = async (cart) => {
+    let client, col;
+    try {
+      [client, col] = await getCollection(COLLECTION_NAME_CART);
+      return await col.insertOne(cart);
+    } finally {
+      await client.close();
+    }
+  };
 
   return myDB;
 }

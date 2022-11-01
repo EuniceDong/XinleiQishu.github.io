@@ -97,4 +97,12 @@ router.get("/signout", (req, res, next) => {
   });
 });
 
+router.get("/shoppingCartAdd", async (req, res) => {
+  const cart = {
+    user: req.session.user,
+  };
+
+  await myDB.shoppingCartAdd();
+});
+
 export default router;

@@ -254,7 +254,7 @@ cardBtn.onclick = function () {
   document.location.href = `./html/checkout.html`;
 };
 
-function incrementItem() {
+async function incrementItem() {
   let itemToInc = this.parentNode.previousSibling.innerText;
   console.log(itemToInc);
   var incObj = cartData.find((element) => element.name == itemToInc);
@@ -265,6 +265,7 @@ function incrementItem() {
     (incObj.quantity - 1);
   incObj.price = currPrice * incObj.quantity;
   totalAmount();
+  await fetch("/shoppingCartAdd");
   cartItems();
 }
 
