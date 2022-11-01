@@ -34,7 +34,7 @@ This project is an online food order website that allow different users to creat
 2. Open it in your favourite editor
 3. Install Node.js (v14.19.0) and MongoDB
 4. Run yarn install/ npm install to install node modules
-5. Go to index.html file and run the file with a live server to host the website
+
 
 
 ## Build Dependencies and Instructions
