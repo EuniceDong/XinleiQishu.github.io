@@ -12,13 +12,13 @@ This repo contains the project2 learned and practiced on course cs5610 web devel
 [Qishu & Xinlei's Food Order Website](https://github.com/EuniceDong/XinleiQishu.github.io)
 
 **Demo Link**
-[Demo on YouTube Channel](https://www.youtube.com/channel/)
+[Demo on YouTube Channel](https://youtu.be/Fda4ZuCUMNc)
 
 **Presentation Link**
-[Google Slides Link](https://docs.google.com/)
+[Google Slides Link](https://docs.google.com/presentation/d/1TkU3MJmvJP7nsuAB8f04KrqlzX56LS8pA0YLoxvltoE/edit#slide=id.p)
 
 **Design Document**
-[Design Document](https://github.com/EuniceDong/XinleiQishu.github.io/)
+[Design Document](https://www.figma.com/file/UqR0N3RXMVXbR65ZFxcX3A/Untitled?node-id=0%3A1)
 
 **Class Link**
 [CS5610 Web Development Course](https://johnguerra.co/classes/webDevelopment_fall_2022/)
