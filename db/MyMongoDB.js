@@ -67,15 +67,15 @@ function MyMongoDB() {
     }
   };
 
-  myDB.shoppingCartAdd = async (cart) => {
-    let client, col;
-    try {
-      [client, col] = await getCollection(COLLECTION_NAME_CART);
-      return await col.insertOne(cart);
-    } finally {
-      await client.close();
-    }
-  };
+  // myDB.shoppingCartAdd = async (cart) => {
+  //   let client, col;
+  //   try {
+  //     [client, col] = await getCollection(COLLECTION_NAME_CART);
+  //     return await col.insertOne(cart);
+  //   } finally {
+  //     await client.close();
+  //   }
+  // };
 
   return myDB;
 }

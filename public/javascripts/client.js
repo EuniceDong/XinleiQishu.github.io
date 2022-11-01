@@ -2,7 +2,10 @@ function MyClientModule() {
   const msgDiv = document.getElementById("messages");
   const authMessage = document.getElementById("authMessage");
   const btn_signup = document.getElementById("btn_signup");
-  const form_signup = document.getElementById("signup_form");
+  // const form_signup = document.getElementById("signup_form");
+  // const btn_signin = document.getElementById("signup_back");
+  // const btn_signup = document.getElementById("signup");
+  // const form_signin = document.getElementById("signin_form");
   function checkIfSignError() {
     const urlParams = new URLSearchParams(window.location.search);
     // https://stackoverflow.com/a/901144/18410211
@@ -44,25 +47,12 @@ function MyClientModule() {
   }
 
   function userSignUp() {
-    const btn_signin = document.getElementById("signup_back");
-    const btn_signup = document.getElementById("signup");
-    const form_signin = document.getElementById("signin_form");
-
-    btn_signin.onclick = () => toggle(false, form_signin, form_signup);
-    btn_signup.onclick = () => toggle(true, form_signin, form_signup);
+    // btn_signin.onclick = () => toggle(false, form_signin, form_signup);
+    btn_signup.onclick = () => (window.location.href = "../html/signup.html");
   }
-
-  btn_signup.onclick = () => {
-    window.location.href = "../html/signup.html";
-    console.log("!!!!!!!jump to sign up!!!!!!!");
-  };
 
   checkIfLoggedIn();
   userSignUp();
-
-  btn_shoppingCartAdd.onclick = async () => {
-    await fetch("/shoppingCartAdd");
-  };
 }
 
 MyClientModule();

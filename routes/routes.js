@@ -1,7 +1,5 @@
 import express from "express";
 
-export const PORT = process.env.PORT || 3000;
-
 import myDB from "../db/MyMongoDB.js";
 
 const router = express.Router();
@@ -97,12 +95,12 @@ router.get("/signout", (req, res, next) => {
   });
 });
 
-router.get("/shoppingCartAdd", async (req, res) => {
-  const cart = {
-    user: req.session.user,
-  };
+// router.get("/shoppingCartAdd", async (req, res) => {
+//   const cart = {
+//     user: req.session.user,
+//   };
 
-  await myDB.shoppingCartAdd();
-});
+//   await myDB.shoppingCartAdd();
+// });
 
 export default router;
