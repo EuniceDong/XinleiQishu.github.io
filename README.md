@@ -42,8 +42,6 @@ npm init -y
 npm i express
 npm i --save--dev nodemon
 npm i bcrypt
-npm i morgan
-npm i cookie-parser
 npm install mongodb
 npm install eslint
 npm install prettier
