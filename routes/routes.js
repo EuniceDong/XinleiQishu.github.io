@@ -104,3 +104,11 @@ router.get("/signout", (req, res, next) => {
 // });
 
 export default router;
+
+// Sometimes I can't open your demo link, there might be something wrong with your deploy
+// Registratation is broken, says"application error" after I tried to register.
+// UI and most of the order function work with your default account, 
+// but I wonder if it will work when I use another account, but I can't test it since your registration doesn't work
+// Seems you didn't pass the order data to backend, as I only see user login/registration routes
+// checkout doesn't work in your demo
+// The databse only used one collection for users
