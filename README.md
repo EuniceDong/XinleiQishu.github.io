@@ -72,3 +72,12 @@ npm install prettier
 2. View Shopping Cart 
 
 3. Check Out with Credit Card
+
+
+
+
+
+Code review by Xingjian Bi
+
+It seems there’s something wrong with your database connection on heroku. But I watched your video demo and tried to deploy locally. Overall your project looks great! The menu UI makes me want to order!  One things you can add is to also show username on menu page. I don’t want to accidentally payed for someone else 😂.  I also see you encrypted users passcode using hash, that’s also a great feature. For database part, I see you have a collection called food items but never got used. It’s better to have more features like as a restaurant owner, he/she has a manager account that can add new food or adjust the price etc. 
+
